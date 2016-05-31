@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>MAGISTRU.org</title>
+		<!-- build:css css/combined.css -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="css/flaticon.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/ken-burns.css">
+		<link rel="stylesheet" href="css/main.min.css">
+		<!-- endbuild -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="image/ico/favicon.ico">
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=.5, user-scalable=no">
+
+	</head>
+
+	<body>
+
+		<div id="loading">
+			<div id="loading-center">
+				<div id="loading-center-absolute">
+					<div id="object"></div>
+				</div>
+			</div>
+		</div>
+		<div class="fade-menu"></div>
+		<div id="fb-root"></div>
+		<script>
+			( function(d, s, id) {
+					var js,
+					    fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id))
+						return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.6";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<div class="layout-menu container-fluid">
+
+			<div class="col-md-3 col-sm-2 col-xs-4">
+				<div class="brand">
+					<a href="#"><img src="image/logo-magistru.png" alt=""></a>
+				</div>
+				
+			</div>
+			<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-0 col-xs-8">
+				<div style="float:right; display:inline-block">
+					<ol class="top-menu ">
+						<li>
+							<a href="javascript:void(0)" class="active">Главная</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Новости</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Фото</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Видео</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Контакты</a>
+						</li>
+					</ol>
+					<button class="btn-slide visible-xs">
+					<span class="fa fa-reorder fa-2x"></span>
+				</button>
+					<div class="lang_selector" style="height: 26px;">
+						<a href="javascript:void(0)" class="lang_btn current_language" style="line-height: 26px;">Ru</a>
+						<ul class="language_list">
+							<li style="line-height: 26px;">
+								<a href="javascript:void(0)">Ro</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<section class="default-blog-gallery">
+			<div id="kb" class="carousel kb_elastic animate_text kb_wrapper" data-ride="carousel" data-interval="6000" data-pause="hover">
+
+				<div class="carousel-inner" role="listbox">
+
+					<div class="item active">
+						<img src="http://filwebs.ru/demo/bootstrap-kenbruns-carousel/images/slider_02.jpg" alt="slider 01">
+						<div class="carousel-caption kb_caption hidden-sm hidden-xs">
+							<span data-animation="animated flipInX" class="">Заголовок слайда</span>
+							<h2 data-animation="animated flipInX" class="">Great solution for new projects</h2>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="http://filwebs.ru/demo/bootstrap-kenbruns-carousel/images/slider_02.jpg" alt="slider 02">
+						<div class="carousel-caption kb_caption kb_caption_right hidden-sm hidden-xs">
+							<span data-animation="animated flipInX" class="">Заголовок слайда</span>
+							<h2 data-animation="animated flipInX" class="">It attracts the attention of customers</h2>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="http://filwebs.ru/demo/bootstrap-kenbruns-carousel/images/slider_02.jpg" alt="slider 03">
+						<div class="carousel-caption kb_caption kb_caption_center hidden-sm hidden-xs">
+							<span data-animation="animated flipInX" class="">Заголовок слайда</span>
+							<h2 data-animation="animated flipInX" class="">Demonstrate your benefits</h2>
+						</div>
+					</div>
+
+				</div>
+
+				<a class="left carousel-control kb_control_left" href="http://filwebs.ru/demo/bootstrap-kenbruns-carousel/#kb" role="button" data-slide="prev"> <span class="fa fa-angle-left kb_icons" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+
+				<a class="right carousel-control kb_control_right" href="http://filwebs.ru/demo/bootstrap-kenbruns-carousel/#kb" role="button" data-slide="next"> <span class="fa fa-angle-right kb_icons" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+
+			</div>
+		</section>
+
+		<section class="world-form-client">
+			<div class="container">
+				<div class="title-box text-center">
+					
+					<h2>Деятельность альянса</h2>
+					<div class="text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+					</div>
+				</div>
+				<div class="col-md-6 world-form-client-left wow fadeInLeft animated" data-wow-duration="1500ms" data-wow-delay="0ms">
+					<div class="section-title text-center">
+						<h2>Words From Our Clients</h2>
+						<span class="separator">//</span>
+						<p>
+							Took a whole lotta tryin' just to get up that hill. So this is the tale of our castaways they're here for a long long time.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6 world-form-client-right wow fadeInRight animated" data-wow-duration="1500ms" data-wow-delay="0ms">
+					<div id="world-client-carousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<div class="world-client-single-item text-center">
+									<div class="content">
+										<span>Относительно документирования иностранцев и лиц без гражданства:</span>
+										<p>
+											<ul class="world-menu">
+												<li>Продление срока пребывания на территории Молдовы</li>
+												<li>Оформления удостоверения на временное проживания</li>
+												<li>Получение разрешения на иммиграцию</li>
+												<li>Оформление удостоверения на постоянное проживания иностранцам и лицам без гражданства, которые иммигрировали в Молдову на постоянное проживание</li>
+												<li>Оформление приглашений иностранцам и лицам без гражданства на получение визовых документов для въезда в Молдову по заявлениям физических лиц</li>
+												<li>Оформление и выдача приглашений иностранцам и лицам без гражданства на получение визовых документов для въезда в Молдову по ходатайствам юридических лиц</li>
+												<li>Выдача удостоверения лица без гражданства для выезда за границу Получение разрешения на трудоустройство в Молдове</li>
+											</ul>
+										</p>
+
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="world-client-single-item text-center">
+									<div class="content">
+										<span>Относительно детей и молодежи:</span>
+										<p>
+											<ul class="world-menu">
+												<li>Организация детского отдыха в Молдове, странах СНГ, в дальнем зарубежье</li>
+												<li>Организация тематических круглых столов,творческих фестивалей</li>
+												<li>Консультации психолога, логопеда</li>
+											
+											</ul>
+										</p>
+										<span>Относительно приобретения гражданства Молдовы Для лиц, обращающихся за защитой в Молдове:</span>
+										<p>
+										<ul class="world-menu">
+												<li>Предоставление статуса беженца;</li>
+												<li>Предоставление дополнительной или временной защиты;</li>
+												
+											</ul>
+										</p>
+										<span>Для молдавских иммигрантов за рубежом:</span>
+										<p>
+											<ul class="world-menu">
+												<li>Оформление документа гражданина Молдовы для выезда за границу</li>
+											<ul>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<a class="left client-testimonial-control" href="#world-client-carousel" role="button" data-slide="prev"><i class="fa fa-caret-left"></i></a>
+
+						<a class="right client-testimonial-control" href="#world-client-carousel" role="button" data-slide="next"><i class="fa fa-caret-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="default-blog-section">
+			<div class="bottom-separator hidden-xs"></div>
+			<div class="container">
+				<div class="title-box text-center">
+					<h3 class="small-text">Наш блог</h3>
+					<h2>Новости альянса</h2>
+					<div class="text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+					</div>
+				</div>
+
+				<!--Default Blog Post / Style One-->
+				<article class="default-post-style blog-post style-one left-aligned">
+					<div class="row">
+						<div class="col-md-7 col-sm-12 col-xs-12 image-column">
+
+							<figure class="blog-image wow fadeInLeft animated" data-wow-duration="1500ms" data-wow-delay="10ms"><img src="http://volter.themexriver.com/images/resource/blog-image-1.jpg" alt="">
+							</figure>
+
+						</div>
+						<div class="col-md-5 col-sm-12 col-xs-12 content-column padd-top-50">
+							<div class="default-content-box wow fadeInRight animated" data-wow-duration="1500ms" data-wow-delay="10ms" >
+								<div class="default-post-title">
+									<h3><a href="#">Летний Этнофестиваль "Ало мы ищем таланты"</a></h3>
+								</div>
+								<div class="content-box">
+									<div class="default-post-info">
+										Декабрь 12, 2015
+									</div>
+									<div class="text">
+										<p>
+											Летний этнофестиваль "Ало мы ищем таланты" в Болгарии. Умеешь петь\танцевать\рисовать? Записывайся!
+										</p>
+									</div>
+								</div>
+								<div class="link-box">
+									<a href="#" class="theme-btn read-more">Подробнее</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<!--Default Blog Post / Style One-->
+				<article class="default-post-style blog-post style-one right-aligned">
+					<div class="row">
+						<div class="col-md-7 col-sm-12 col-xs-12 image-column pull-right">
+
+							<figure class="blog-image wow fadeInRight animated" data-wow-duration="1500ms" data-wow-delay="0ms" ><img src="http://volter.themexriver.com/images/resource/blog-image-2.jpg" alt="">
+							</figure>
+
+						</div>
+						<div class="col-md-5 col-sm-12 col-xs-12 content-column padd-top-50">
+							<div class="default-content-box text-right wow fadeInLeft animated" data-wow-duration="1500ms" data-wow-delay="0ms" >
+								<div class="default-post-title">
+									<h3><a href="#">"Этно-фестиваль в Праге"</a></h3>
+								</div>
+								<div class="content-box">
+									<div class="default-post-info">
+										Декабрь 12, 2015
+									</div>
+									<div class="text">
+										<p>
+											Летний этнофестиваль "Ало мы ищем таланты" в Болгарии. Умеешь петь\танцевать\рисовать? Записывайся!
+										</p>
+									</div>
+								</div>
+								<div class="link-box">
+									<a href="#" class="theme-btn read-more">Подробнее</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<!--Default Blog Post / Style One-->
+				<article class="default-post-style blog-post style-one left-aligned">
+					<div class="row">
+						<div class="col-md-7 col-sm-12 col-xs-12 image-column">
+
+							<figure class="blog-image wow fadeInLeft animated" data-wow-duration="1500ms" data-wow-delay="0ms"><img src="http://volter.themexriver.com/images/resource/blog-image-3.jpg" alt="">
+							</figure>
+
+						</div>
+						<div class="col-md-5 col-sm-12 col-xs-12 content-column padd-top-50">
+							<div class="default-content-box wow fadeInRight animated" data-wow-duration="1500ms" data-wow-delay="0ms" >
+								<div class="default-post-title">
+									<h3><a href="#">"Этно-фестиваль в Болгарии"</a></h3>
+								</div>
+								<div class="content-box">
+									<div class="default-post-info">
+										Декабрь 12, 2015
+									</div>
+									<div class="text">
+										<p>
+											Летний этнофестиваль "Ало мы ищем таланты" в Болгарии. Умеешь петь\танцевать\рисовать? Записывайся!
+										</p>
+									</div>
+								</div>
+								<div class="link-box">
+									<a href="#" class="theme-btn read-more">Подробнее</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</article>
+
+			</div>
+
+		</section>
+		<section class="default-blog-contact" style="background:#1A1A1A;overflow: hidden;padding-top: 50px;padding-bottom: 50px;">
+			<div class="form_container container form-contact-us">
+				<div class="col-md-6 col-sm-12 col-xs-12 form-contact-right">
+					<div class="contact_us ">
+						Свяжитесь с нами
+					</div>
+					<ul class="info-box">
+						<li>
+							<span class="icon flaticon-pin-4"></span> 78 Fashion Street, Beverly Hill Abony, NYC 12045
+						</li>
+						<li>
+							<span class="icon flaticon-technology-3"></span> Phone: (800) 0123 4567 890
+						</li>
+						<li>
+							<span class="icon flaticon-interface-7"></span> E-mail:  teclus@envato.com
+						</li>
+					</ul>
+
+					<div class="content-box">
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+					</div>
+
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 form-contact-us">
+
+					<div class="row">
+
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="row">
+								<div class="form-group">
+									<input type="text" name="username" placeholder="Имя, Фамилия" >
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="row">
+								<div class="form-group">
+
+									<input type="text" name="username" placeholder="E-mail" >
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="row">
+								<div class="form-group">
+
+									<input type="text" name="username" placeholder="Телефон" >
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="row">
+								<div class="form-group">
+
+									<input type="text" name="username" placeholder="Название прадприятия" >
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="row">
+								<div class="form-group">
+									<textarea name="message" placeholder="Сообщение"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12 text-right">
+							<button type="submit" class="theme-btn styled-line-btn left-lined">
+								ОТПРАВИТЬ
+							</button>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="sponsors-section ">
+			<!--<div class="top-separator hidden-xs"></div>-->
+			<h4 class="wow  fadeInDown animated" > Наши партнеры </h4>
+
+			<div class="outer-box text-center clearfix container-fluid">
+				<a href="#"><img src="http://wp1.themexlab.com/html/teclus/images/clients/1.jpg" alt=""></a>
+				<a href="#"><img src="http://wp1.themexlab.com/html/teclus/images/clients/2.jpg" alt=""></a>
+				<a href="#"><img src="http://wp1.themexlab.com/html/teclus/images/clients/3.jpg" alt=""></a>
+				<a href="#"><img src="http://wp1.themexlab.com/html/teclus/images/clients/4.jpg" alt=""></a>
+				<a href="#"><img src="http://wp1.themexlab.com/html/teclus/images/clients/5.jpg" alt=""></a>
+			</div>
+
+		</section>
+
+		<section class="newsletter">
+
+			<div class="container">
+				<div class="bottom-separator hidden-xs"></div>
+				<div class="row">
+					<div class="noo-sh-mailchimp">
+						<h3 class="noo-mail-title">sign up for news</h3>
+						<p class="noo-mail-desc">
+							Exclusive offer for new member! Sign up to day!
+						</p>
+						<form class="newsletter-form">
+							<div class="newsletter-form-fields">
+								<input type="email" name="EMAIL" placeholder="Ваш email адрес" required="">
+								<input type="submit" value="подписаться">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="layout-footer container xs-text-center">
+			<div class="row">
+				<div class="footer-upper">
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="row">
+							<div class="col-lg-6 col-sm-6 col-xs-12 column">
+								<div class="footer-widget about-widget">
+									<h3>О Нас</h3>
+									<div class="text">
+										<p>
+											Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+										</p>
+									</div>
+
+									<div class="social-links">
+										<a href="#"><span class="fa fa-facebook-f"></span></a>
+										<a href="#"><span class="fa fa-twitter"></span></a>
+										<a href="#"><span class="fa fa-google-plus"></span></a>
+										<a href="#"><span class="fa fa-instagram"></span></a>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-sm-6 col-xs-12 column">
+								<h3>Карта Сайта</h3>
+								<div class="row ">
+
+									<div class="col-lg-6 col-sm-6 col-xs-12">
+										<div class="footer-widget links-widget">
+											<ul>
+												<li>
+													<a href="#">Our Company</a>
+												</li>
+												<li>
+													<a href="#">Our Philosophy</a>
+												</li>
+												<li>
+													<a href="#">Monthly Statistics</a>
+												</li>
+												<li>
+													<a href="#">Marketing Strategies</a>
+												</li>
+												<li>
+													<a href="#">Our Services</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="col-lg-6 col-sm-6 col-xs-12">
+										<div class="footer-widget links-widget">
+											<ul>
+												<li>
+													<a href="#">Support Forums</a>
+												</li>
+												<li>
+													<a href="#">FAQ &amp; Help Center</a>
+												</li>
+												<li>
+													<a href="#">Register an account</a>
+												</li>
+												<li>
+													<a href="#">Login with account</a>
+												</li>
+												<li>
+													<a href="#">Careers</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="row ">
+
+							<div class="col-lg-6 col-sm-6 col-xs-12 column">
+								<div class="footer-widget">
+									<h3>Контакты</h3>
+
+									<ul class="info-box">
+										<li>
+											<span class="icon flaticon-pin-4"></span> MD Chisinau, str. Gh.Crisan 3
+										</li>
+										<li>
+											<span class="icon flaticon-technology-3"></span> Телефон: +373 69 464 274
+										</li>
+										<li>
+											<span class="icon flaticon-interface-7"></span> Email: alla.donosian@mail.ru
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-sm-6 col-xs-12 column">
+								<div class="row">
+									<div class="footer-widget">
+										<h3>Наша группа Facebook</h3>
+										<div class="fb-page" data-href="https://www.facebook.com/magistru.org" data-tabs="event" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+											<div class="fb-xfbml-parse-ignore">
+												<blockquote cite="https://www.facebook.com/magistru.org">
+													<a href="https://www.facebook.com/magistru.org">Magistru</a>
+												</blockquote>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="logo text-center"><img src="image/logo-magistru.png" alt="">
+				</div>
+
+				<div class="copyright text-center developer">
+					Разработка сайта - <a href="javascript:void(0)" class="developer">D'ART Group</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="scroll-to-top">
+			<span class="fa fa-arrow-up"></span>
+		</div>
+
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/plugins-scroll.js"></script>
+		<script src="js/wow.min.js"></script>
+
+		<script src="js/components.js"></script>
+
+		<script>
+			// Skroll-page
+			$(document).ready(function() {
+				//Chrome Smooth Scroll
+				try {
+					$.browserSelector();
+					if ($("html").hasClass("chrome")) {
+						$.smoothScroll();
+					}
+				} catch(err) {
+
+				};
+			});
+		</script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			
+			new WOW().init();
+		</script>
+	</body>
+</html>
+
