@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>MAGISTRU.org</title>
+		<!-- build:css css/combined.css -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="css/flaticon.css">
+		<link rel="stylesheet" href="css/main.min.css">
+		<!-- endbuild -->
+		<link href="css/lightgallery.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="image/ico/favicon.ico">
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=.5, user-scalable=no">
+		<script src="js/jquery-1.12.3.min.js"></script>
+	</head>
+
+	<body>
+		<div id="loading">
+			<div id="loading-center">
+				<div id="loading-center-absolute">
+					<div id="object"></div>
+				</div>
+			</div>
+		</div>
+		<div class="fade-menu"></div>
+		<div id="fb-root"></div>
+		<script>
+			( function(d, s, id) {
+					var js,
+					    fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id))
+						return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.6";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+
+		</script>
+		<script>
+			$().ready(function() {
+				$('.podcast_excerpt').jTruncate({
+					length : 200,
+					minTrail : 0,
+					moreAni : "fast",
+					lessAni : 2000
+				});
+			});
+		</script>
+
+		<div class="layout-menu container-fluid">
+
+			<div class="col-md-3 col-sm-2 col-xs-4">
+				<div class="brand">
+					<a href="index.html"><img src="image/logo-magistru.png" alt=""></a>
+				</div>
+
+			</div>
+			<div class="col-lg-7 col-lg-offset-2 col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-0 col-xs-8">
+				<div style="float:right; display:inline-block">
+					<ol class="top-menu ">
+						<li>
+							<a href="index.html">Главная</a>
+						</li>
+						<li>
+							<a href="news.html"  >Новости</a>
+						</li>
+						<li>
+							<a href="galery.html" >Фото</a>
+						</li>
+						<li>
+							<a href="video.html" class="active">Видео</a>
+						</li>
+						<li>
+							<a href="contacts.html" >Контакты</a>
+						</li>
+					</ol>
+					<button class="btn-slide visible-xs">
+						<span class="fa fa-reorder fa-2x"></span>
+					</button>
+					<div class="lang_selector" style="height: 26px;">
+						<a href="javascript:void(0)" class="lang_btn current_language" style="line-height: 26px;">Ru</a>
+						<ul class="language_list">
+							<li style="line-height: 26px;">
+								<a href="javascript:void(0)">Ro</a>
+								<a href="javascript:void(0)">En</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<section class="inner-banner">
+			<div class="thm-container container">
+				<div class="box clearfix">
+					<h2 class="pull-left">Видео</h2>
+					<ul class="breadcumb pull-right">
+						<li>
+							<a href="/"><i class="fa fa-home"></i> Главная</a>
+						</li>
+						<li>
+							<span>Видео</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<div class="layout-content ">
+
+			<div class="container">
+
+				<div class="col-lg-12 block-map margin-t-30">
+					<div class="row">
+						<div class="galery_title padd-left-70 with-style style-left">
+							<h2>Видео с наших мероприятий</h2>
+
+						</div>
+
+						<div id="filters" class="button-group" style="">
+							<button class="button is-checked" data-filter="*">
+								ВСЕ
+							</button>
+							<button class="button" data-filter=".bukovel">
+								БУКОВЕЛЬ
+							</button>
+							<button class="button" data-filter=".praga">
+								ПРАГА
+							</button>
+							<button class="button" data-filter=".grecia">
+								ГРЕЦИЯ
+							</button>
+							<button class="button" data-filter=".bolgaria">
+								БОЛГАРИЯ
+							</button>
+							<button class="button" data-filter=".festival">
+								Фестиваль
+							</button>
+						</div>
+
+						<span class="block-map-title-text"></span>
+					</div>
+
+				</div>
+			</div>
+			<div class="container video_container ">
+				<div class="isotope">
+
+					<div class="col-md-6 element-item festival ">
+						<div class="youtube">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IjEOnzPvrHA" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="podcast_content">
+							<div class="podcast_date ">
+								December 19, 2015
+							</div>
+							<h2 class="podcast_title"><a href="/">Episode #06 - You can also post a video</a></h2>
+							<p class="podcast_excerpt">
+								<a href="">This is a boxed podcast layout. Lorem ipsum dolor sit amet, consectetur adipipodcast layout. Lorem ipsum dolor sit amet, consectetur adipipodcast layout. Lorem ipsum dolor sit amet, consectetur adipipodcast layout. Lorem ipsum dolor sit amet, consectetur adipipodcast layout. Lorem ipsum dolor sit amet, consectetur adipipodcast layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+							</p>
+
+						</div>
+					</div>
+
+					<div class="col-md-6 element-item praga ">
+						<div class="youtube">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IjEOnzPvrHA" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="podcast_content">
+							<div class="podcast_date ">
+								December 19, 2015
+							</div>
+							<h2 class="podcast_title"><a href="/">Episode #06 - You can also post a video</a></h2>
+							<p class="podcast_excerpt">
+								<a href="">This is a boxed podcast layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 element-item grecia ">
+						<div class="youtube">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IjEOnzPvrHA" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="podcast_content">
+							<div class="podcast_date ">
+								December 19, 2015
+							</div>
+							<h2 class="podcast_title"><a href="/">Episode #06 - You can also post a video</a></h2>
+							<p class="podcast_excerpt">
+								<a href="">This is a boxed podcast layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 element-item praga ">
+						<div class="youtube">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IjEOnzPvrHA" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="podcast_content">
+							<div class="podcast_date ">
+								December 19, 2015
+							</div>
+							<h2 class="podcast_title"><a href="/">Episode #06 - You can also post a video</a></h2>
+							<p class="podcast_excerpt">
+								<a href="">This is a boxed podcast layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 element-item grecia ">
+						<div class="youtube">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IjEOnzPvrHA" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="podcast_content">
+							<div class="podcast_date ">
+								December 19, 2015
+							</div>
+							<h2 class="podcast_title"><a href="/">Episode #06 - You can also post a video</a></h2>
+							<p class="podcast_excerpt">
+								<a href="">This is a boxed podcast layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+							</p>
+
+						</div>
+					</div>
+
+					<div class="col-md-6 element-item praga ">
+						<div class="youtube">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IjEOnzPvrHA" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="podcast_content">
+							<div class="podcast_date ">
+								December 19, 2015
+							</div>
+							<h2 class="podcast_title"><a href="/">Episode #06 - You can also post a video</a></h2>
+							<p class="podcast_excerpt">
+								<a href="">This is a boxed podcast layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+							</p>
+
+						</div>
+					</div>
+					<div style="width:100%; float:left;"></div>
+
+					<div class="col-md-6 element-item bukovel ">
+						<div class="youtube">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IjEOnzPvrHA" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="podcast_content">
+							<div class="podcast_date ">
+								December 19, 2015
+							</div>
+							<h2 class="podcast_title"><a href="/">Episode #06 - You can also post a video</a></h2>
+							<p class="podcast_excerpt">
+								<a href="">This is a boxed podcast  amet,  yout. Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+							</p>
+
+						</div>
+					</div>
+
+					<div class="col-md-6 element-item bukovel ">
+						<div class="youtube">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IjEOnzPvrHA" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="podcast_content">
+							<div class="podcast_date ">
+								December 19, 2015
+							</div>
+							<h2 class="podcast_title"><a href="/">Episode #06 - You can also post a video</a></h2>
+							<p class="podcast_excerpt">
+								<a href="">This is a boxed podcast  amet,  yout. Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+							</p>
+
+						</div>
+					</div>
+
+					<div class="col-md-6 element-item grecia ">
+						<div class="youtube">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IjEOnzPvrHA" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="podcast_content">
+							<div class="podcast_date ">
+								December 19, 2015
+							</div>
+							<h2 class="podcast_title"><a href="/">Episode #06 - You can also post a video</a></h2>
+							<p class="podcast_excerpt">
+								<a href="">This is a boxed podcast  amet,  yout. Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 element-item bolgaria ">
+						<div class="youtube">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/IjEOnzPvrHA" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="podcast_content">
+							<div class="podcast_date ">
+								December 19, 2015
+							</div>
+							<h2 class="podcast_title"><a href="/">Episode #06 - You can also post a video</a></h2>
+							<p class="podcast_excerpt">
+								<a href="">This is a boxed podcast layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+							</p>
+
+						</div>
+					</div>
+					<div style="width:100%; float:left;"></div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="layout-footer container xs-text-center">
+			<div class="row">
+				<div class="footer-upper">
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="row">
+							<div class="col-lg-6 col-sm-6 col-xs-12 column">
+								<div class="footer-widget about-widget">
+									<h3>О Нас</h3>
+									<div class="text">
+										<p>
+											Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+										</p>
+									</div>
+
+									<div class="social-links">
+										<a href="#"><span class="fa fa-facebook-f"></span></a>
+										<a href="#"><span class="fa fa-twitter"></span></a>
+										<a href="#"><span class="fa fa-google-plus"></span></a>
+										<a href="#"><span class="fa fa-instagram"></span></a>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-sm-6 col-xs-12 column">
+								<h3>Карта Сайта</h3>
+								<div class="row ">
+
+									<div class="col-lg-6 col-sm-6 col-xs-12">
+										<div class="footer-widget links-widget">
+											<ul>
+												<li>
+													<a href="#">Our Company</a>
+												</li>
+												<li>
+													<a href="#">Our Philosophy</a>
+												</li>
+												<li>
+													<a href="#">Monthly Statistics</a>
+												</li>
+												<li>
+													<a href="#">Marketing Strategies</a>
+												</li>
+												<li>
+													<a href="#">Our Services</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="col-lg-6 col-sm-6 col-xs-12">
+										<div class="footer-widget links-widget">
+											<ul>
+												<li>
+													<a href="#">Support Forums</a>
+												</li>
+												<li>
+													<a href="#">FAQ &amp; Help Center</a>
+												</li>
+												<li>
+													<a href="#">Register an account</a>
+												</li>
+												<li>
+													<a href="#">Login with account</a>
+												</li>
+												<li>
+													<a href="#">Careers</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="row ">
+
+							<div class="col-lg-6 col-sm-6 col-xs-12 column">
+								<div class="footer-widget">
+									<h3>Контакты</h3>
+
+									<ul class="info-box">
+										<li>
+											<span class="icon flaticon-pin-4"></span> MD Chisinau, str. Gh.Crisan 3
+										</li>
+										<li>
+											<span class="icon flaticon-technology-3"></span> Телефон: +373 69 464 274
+										</li>
+										<li>
+											<span class="icon flaticon-interface-7"></span> Email: alla.donosian@mail.ru
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-sm-6 col-xs-12 column">
+								<div class="row">
+									<div class="footer-widget">
+										<h3>Наша группа Facebook</h3>
+										<div class="fb-page" data-href="https://www.facebook.com/magistru.org" data-tabs="event" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+											<div class="fb-xfbml-parse-ignore">
+												<blockquote cite="https://www.facebook.com/magistru.org">
+													<a href="https://www.facebook.com/magistru.org">Magistru</a>
+												</blockquote>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="logo text-center"><img src="image/logo-magistru.png" alt="">
+				</div>
+
+				<div class="copyright text-center developer">
+					Разработка сайта - <a href="javascript:void(0)" class="developer">D'ART Group</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="scroll-to-top">
+			<span class="fa fa-arrow-up"></span>
+		</div>
+
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+
+		<script src="js/textcount.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.js"></script>
+		<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+		<script src="lib/jquery.mousewheel.min.js"></script>
+		<script src="js/components.js"></script>
+		<script>
+			// external js: isotope.pkgd.js
+
+			$(document).ready(function() {
+				// init Isotope
+				var $container = $('.isotope').isotope({
+					itemSelector : '.element-item',
+					layoutMode : 'fitRows',
+					getSortData : {
+						name : '.name',
+						symbol : '.symbol',
+						number : '.number parseInt',
+						category : '[data-category]',
+						weight : function(itemElem) {
+							var weight = $(itemElem).find('.weight').text();
+							return parseFloat(weight.replace(/[\(\)]/g, ''));
+						}
+					}
+				});
+
+				// filter functions
+				var filterFns = {
+					// show if number is greater than 50
+					numberGreaterThan50 : function() {
+						var number = $(this).find('.number').text();
+						return parseInt(number, 10) > 50;
+					},
+					// show if name ends with -ium
+					ium : function() {
+						var name = $(this).find('.name').text();
+						return name.match(/ium$/);
+					}
+				};
+
+				// bind filter button click
+				$('#filters').on('click', 'button', function() {
+					var filterValue = $(this).attr('data-filter');
+					// use filterFn if matches value
+					filterValue = filterFns[filterValue] || filterValue;
+					$container.isotope({
+						filter : filterValue
+					});
+				});
+
+				// bind sort button click
+				$('#sorts').on('click', 'button', function() {
+					var sortByValue = $(this).attr('data-sort-by');
+					$container.isotope({
+						sortBy : sortByValue
+					});
+				});
+
+				// change is-checked class on buttons
+				$('.button-group').each(function(i, buttonGroup) {
+					var $buttonGroup = $(buttonGroup);
+					$buttonGroup.on('click', 'button', function() {
+						$buttonGroup.find('.is-checked').removeClass('is-checked');
+						$(this).addClass('is-checked');
+					});
+				});
+
+			});
+
+		</script>
+
+		<script>
+			$(window).resize(function() {
+				$('.podcast_content').equivalent();
+			});
+		</script>
+		<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+		<script src="js/lightgallery.js"></script>
+		<script src="js/lg-fullscreen.js"></script>
+		<script src="js/lg-thumbnail.js"></script>
+		<script src="js/lg-video.js"></script>
+		<script src="js/lg-autoplay.js"></script>
+		<script src="js/lg-zoom.js"></script>
+		<script src="js/lg-hash.js"></script>
+		<script src="js/lg-pager.js"></script>
+		<script src="lib/jquery.mousewheel.min.js"></script>
+	</body>
+</html>
+
